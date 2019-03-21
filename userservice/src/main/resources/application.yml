@@ -1,0 +1,18 @@
+server:
+  port: 7672
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/clouddemo?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka2:8762/eureka/,http://eureka1:8761/eureka/
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  typeAliasesPackage: com.tgram.mapper
