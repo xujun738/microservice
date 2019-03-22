@@ -16,3 +16,15 @@ eureka:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.tgram.mapper
+
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#           thread:
+#              timeoutInMilliseconds: 2000  #修改Hystrix默认超时时间
+#feign:
+#  hystrix:
+#    enabled: true

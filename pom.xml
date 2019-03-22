@@ -26,6 +26,8 @@
         <module>userservice</module>
         <module>common</module>
         <module>mapper</module>
+        <module>hystrix</module>
+        <module>turbine</module>
     </modules>
 
     <dependencyManagement>

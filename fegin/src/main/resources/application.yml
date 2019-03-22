@@ -1,8 +1,22 @@
 server:
-  port: 7671
+  port: 7674
 spring:
   application:
     name: fegin-client
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
 eureka:
   client:
      serviceUrl:

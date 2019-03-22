@@ -1,8 +1,10 @@
 package com.tgram.mapper;
 
+
+import java.util.List;
+
 import com.tgram.common.entity.User;
 import com.tgram.common.entity.UserExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {

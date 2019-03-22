@@ -1,10 +1,9 @@
-package com.tgram.fegin;
+package com.tgram.turbine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.turbine.EnableTurbine;
 
 /**
  * <p>Description : </p>
@@ -13,15 +12,14 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
  *
  * @author eric
  * @version 1.0
- * @Date 2019/3/21 上午10:24
+ * @Date 2019/3/22 下午3:29
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
-@EnableCircuitBreaker
-public class FeginApplication {
+@EnableTurbine
+public class TurbineApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FeginApplication.class, args);
+        SpringApplication.run(TurbineApplication.class, args);
     }
 }

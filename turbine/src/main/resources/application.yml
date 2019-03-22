@@ -1,0 +1,15 @@
+server:
+  port: 7673
+spring:
+  application:
+    name: turbine
+eureka:
+  client:
+     serviceUrl:
+          defaultZone: http://eureka2:8762/eureka/,http://eureka1:8761/eureka/
+turbine:
+  app-config: fegin-client
+  combine-host-port: true
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
